@@ -1,21 +1,23 @@
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import ServicesSection from "@/components/ServicesSection";
-import FeaturesSection from "@/components/FeaturesSection";
-import CTASection from "@/components/CTASection";
-import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
+import EcomNavbar from "@/components/ecommerce/EcomNavbar";
+import EcomHero from "@/components/ecommerce/EcomHero";
+import CategoryGrid from "@/components/ecommerce/CategoryGrid";
+import FeaturedProducts from "@/components/ecommerce/FeaturedProducts";
+import DealsSection from "@/components/ecommerce/DealsSection";
+import TrustBanner from "@/components/ecommerce/TrustBanner";
+import Newsletter from "@/components/ecommerce/Newsletter";
+import EcomFooter from "@/components/ecommerce/EcomFooter";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Navbar />
-      <HeroSection />
-      <ServicesSection />
-      <FeaturesSection />
-      <CTASection />
-      <Footer />
-      <WhatsAppButton />
+      <EcomNavbar />
+      <EcomHero />
+      <TrustBanner />
+      <CategoryGrid />
+      <FeaturedProducts />
+      <DealsSection />
+      <Newsletter />
+      <EcomFooter />
     </div>
   );
 };
