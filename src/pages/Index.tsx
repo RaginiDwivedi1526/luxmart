@@ -1,5 +1,6 @@
 import EcomNavbar from "@/components/ecommerce/EcomNavbar";
 import EcomHero from "@/components/ecommerce/EcomHero";
+import ShopByCategorySection from "@/components/ecommerce/ShopByCategorySection";
 import CategoryGrid from "@/components/ecommerce/CategoryGrid";
 import FeaturedProducts from "@/components/ecommerce/FeaturedProducts";
 import DealsSection from "@/components/ecommerce/DealsSection";
@@ -13,6 +14,7 @@ const Index = () => {
       <EcomNavbar />
       <EcomHero />
       <TrustBanner />
+      <ShopByCategorySection />
       <CategoryGrid />
       <FeaturedProducts />
       <DealsSection />
