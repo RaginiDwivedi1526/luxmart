@@ -18,17 +18,43 @@ export interface Category {
   icon: string;
   count: number;
   image: string;
+  subcategories: string[];
 }
 
 export const categories: Category[] = [
-  { id: "fashion", name: "Fashion", icon: "👗", count: 1240, image: "https://images.unsplash.com/photo-1445205170230-053b83016050?w=400&h=400&fit=crop" },
-  { id: "electronics", name: "Electronics", icon: "📱", count: 860, image: "https://images.unsplash.com/photo-1498049794561-7780e7231661?w=400&h=400&fit=crop" },
-  { id: "kitchen", name: "Kitchen", icon: "🍳", count: 540, image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=400&fit=crop" },
-  { id: "beauty", name: "Beauty", icon: "💄", count: 920, image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=400&h=400&fit=crop" },
-  { id: "home-decor", name: "Home Decor", icon: "🏠", count: 680, image: "https://images.unsplash.com/photo-1616046229478-9901c5536a45?w=400&h=400&fit=crop" },
-  { id: "sports", name: "Sports", icon: "⚽", count: 420, image: "https://images.unsplash.com/photo-1461896836934-bd45ba6343fe?w=400&h=400&fit=crop" },
-  { id: "books", name: "Books", icon: "📚", count: 1100, image: "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=400&h=400&fit=crop" },
-  { id: "gadgets", name: "Gadgets", icon: "🎧", count: 350, image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop" },
+  {
+    id: "fashion-jewellery",
+    name: "Fashion & Jewellery",
+    icon: "💍",
+    count: 1240,
+    image: "https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=800&h=800&fit=crop&q=90",
+    subcategories: [
+      "Earrings", "Bracelets", "Waist Chains", "Pendants",
+      "Hair Accessories", "Anklets", "Rings", "Bangles",
+      "Anti-tarnish Jewellery", "Charm Bracelets",
+    ],
+  },
+  {
+    id: "gifts",
+    name: "Gifts & Accessories",
+    icon: "🎁",
+    count: 860,
+    image: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=800&h=800&fit=crop&q=90",
+    subcategories: [
+      "Crystal Ball", "Eiffel Tower Showpiece", "Key Chains", "Teddy Bear",
+      "Couple Rings", "Jewellery Stand", "Message Bottle", "Phone Stand",
+    ],
+  },
+  {
+    id: "gadgets",
+    name: "Gadgets",
+    icon: "🔌",
+    count: 350,
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=800&fit=crop&q=90",
+    subcategories: [
+      "LED Pear Light", "Moon Light Lamp", "Tally Counter",
+    ],
+  },
 ];
 
 export const products: Product[] = [
